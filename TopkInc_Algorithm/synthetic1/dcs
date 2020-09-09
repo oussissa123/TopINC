@@ -1,0 +1,15 @@
+R0_r0:r0.c0>r0.d0 AND r0.a0 > 500;
+R1_r1:r1.a1 > 800 AND r1.b1>1000;
+R2_r2:r2.a2 < 1500 AND r2.b2<1000;
+R0_r0,R1_r1:r0.a0>r1.a1 and r1.a1 <= 324567;
+R1_r1,R2_r2:r1.a1=r2.a2 and r2.a2>250000;
+R1_r1,R3_r3:r1.a1<>r3.a3 and r1.a1<350000;
+R1_r1,R4_r4:r1.a1<r4.a4 and r4.b4<=200000;
+R0_r0,R2_r2:r0.a0=r2.a2 and r0.b0=r2.b2 and r0.b0>=400000;
+R0_r0,R3_r3:r0.a0=r3.a3 and r0.a0>=10000;
+R0_r0,R4_r4:r0.a0<=r4.a4 and R4.b4<10000;
+R0_r0,R1_r1,R1_r2:r0.a0 > r1.b1 and r1.b1 > r2.b1 and r0.c0>=500000 and r1.d1>=450000 and r2.d1>=450000;
+R0_r0,R1_r1,R2_r2:r0.a0 > r1.b1 and r1.b1 > r2.b2 and r0.b0>450000 and r1.c1>500500 and r2.a2>500700;
+R0_r0,R1_r1,R3_r3:r0.a0 > r1.b1 and r1.b1 > r3.b3 and r0.b0>450000 and r1.a1>450000 and r3.d3>450000;
+R0_r0,R1_r1,R4_r4:r0.a0 <= r1.b1 and r1.b1 > r4.b4 and r0.b0<5000 and r1.a1>450000 and r4.a4>350000;
+R0_r0,R3_r3,R2_r2:r0.a0 = r3.b3 and r3.b3 > r2.b2 and r0.b0<5000 and r3.a3>450000 and r2.a2>350000;

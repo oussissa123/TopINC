@@ -1,0 +1,112 @@
+SET search_path to synthetic4;
+EXPLAIN (ANALYZE, BUFFERS, Format json ) 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=0 LIMIT 50
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=4 AND t2.vioset=4 AND t3.vioset=4 AND t4.vioset=4 LIMIT 48
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=4 AND t2.vioset=4 AND t3.vioset=4 AND t4.vioset=0 LIMIT 47
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=4 AND t2.vioset=4 AND t3.vioset=0 AND t4.vioset=4 LIMIT 47
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=4 AND t2.vioset=4 AND t3.vioset=0 AND t4.vioset=0 LIMIT 46
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=4 AND t2.vioset=0 AND t3.vioset=4 AND t4.vioset=4 LIMIT 46
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=4 AND t2.vioset=0 AND t3.vioset=4 AND t4.vioset=0 LIMIT 45
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=4 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=4 LIMIT 45
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=4 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=0 LIMIT 45
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=0 AND t2.vioset=4 AND t3.vioset=4 AND t4.vioset=4 LIMIT 43
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=0 AND t2.vioset=4 AND t3.vioset=4 AND t4.vioset=0 LIMIT 43
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=0 AND t2.vioset=4 AND t3.vioset=0 AND t4.vioset=4 LIMIT 43
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=0 AND t2.vioset=4 AND t3.vioset=0 AND t4.vioset=0 LIMIT 42
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=4 AND t4.vioset=4 LIMIT 42
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=4 AND t4.vioset=0 LIMIT 40
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=4 LIMIT 39
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=4 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=0 LIMIT 38
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=4 AND t2.vioset=4 AND t3.vioset=4 AND t4.vioset=4 LIMIT 34
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=4 AND t2.vioset=4 AND t3.vioset=4 AND t4.vioset=0 LIMIT 34
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=4 AND t2.vioset=4 AND t3.vioset=0 AND t4.vioset=4 LIMIT 32
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=4 AND t2.vioset=4 AND t3.vioset=0 AND t4.vioset=0 LIMIT 32
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=4 AND t2.vioset=0 AND t3.vioset=4 AND t4.vioset=4 LIMIT 31
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=4 AND t2.vioset=0 AND t3.vioset=4 AND t4.vioset=0 LIMIT 29
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=4 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=4 LIMIT 28
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=4 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=0 LIMIT 27
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=4 AND t3.vioset=4 AND t4.vioset=4 LIMIT 26
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=4 AND t3.vioset=4 AND t4.vioset=0 LIMIT 26
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=4 AND t3.vioset=0 AND t4.vioset=4 LIMIT 24
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=4 AND t3.vioset=0 AND t4.vioset=0 LIMIT 21
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=4 AND t4.vioset=4 LIMIT 19
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=4 AND t4.vioset=0 LIMIT 18
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=4 LIMIT 17
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=32 LIMIT 16
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=1 LIMIT 16
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=2 LIMIT 16
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=16 LIMIT 16
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=0 AND t4.vioset=8 LIMIT 16
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=32 AND t4.vioset=0 LIMIT 15
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=32 AND t4.vioset=32 LIMIT 15
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=1 AND t4.vioset=0 LIMIT 15
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=1 AND t4.vioset=1 LIMIT 14
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=2 AND t4.vioset=0 LIMIT 13
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=2 AND t4.vioset=2 LIMIT 12
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=16 AND t4.vioset=0 LIMIT 10
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=16 AND t4.vioset=16 LIMIT 10
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=8 AND t4.vioset=0 LIMIT 10
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=0 AND t3.vioset=8 AND t4.vioset=8 LIMIT 9
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=32 AND t3.vioset=0 AND t4.vioset=0 LIMIT 8
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=32 AND t3.vioset=0 AND t4.vioset=32 LIMIT 8
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=32 AND t3.vioset=32 AND t4.vioset=0 LIMIT 8
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=32 AND t3.vioset=32 AND t4.vioset=32 LIMIT 8
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=1 AND t3.vioset=0 AND t4.vioset=0 LIMIT 8
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=1 AND t3.vioset=0 AND t4.vioset=1 LIMIT 5
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=1 AND t3.vioset=1 AND t4.vioset=0 LIMIT 1
+	 UNION 
+SELECT * FROM R0 t0, R1 t1, R2 t2, R3 t3, R4 t4 WHERE t0.a0 = t1.a1 AND t0.a0 = t4.a4 AND t1.b1 = t2.b2 AND t3.c3 = t4.c4 and t1.a1 = t4.a4 AND t0.vioset=0 AND t1.vioset=0 AND t2.vioset=1 AND t3.vioset=1 AND t4.vioset=1 LIMIT 1
+	 UNION 

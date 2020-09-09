@@ -1,0 +1,3 @@
+Hospital_t1,Hospital_t2:t1.Provider_Number=t2.Provider_Number AND t1.Measure_Name=t2.Measure_Name;
+Hospital_t1,Hospital_t2:t1.Hospital_Name=t2.Hospital_Name AND t1.Sample=t2.Sample AND t1.StateAvg=t2.StateAvg;
+Hospital_t1,Hospital_t2:t1.Hospital_Name=t2.Hospital_Name AND t1.Hospital_Owner=t2.Hospital_Owner AND t1.Measure_Code=t2.Measure_Code AND t1.Sample=t2.Sample;

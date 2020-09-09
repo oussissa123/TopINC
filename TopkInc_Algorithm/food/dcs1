@@ -1,0 +1,3 @@
+FoodInspection_t1, FoodInspection_t2:t1.Facility_Type = t2.Facility_Type AND t1.violations = t2.violations AND t1.Results <> t2.Results;
+Foodinspection_t1, Foodinspection_t2:t1.location = t2.location AND t1.city <> t2.city;
+Foodinspection_t1, Foodinspection_t2:t1.location = t2.location AND t1.zip <> t2.zip;

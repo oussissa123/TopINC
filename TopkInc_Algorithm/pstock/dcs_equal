@@ -1,0 +1,1 @@
+pstock_t1, pstock_t2:t1.Close=t2.Close  AND t1.Open=t2.Close;

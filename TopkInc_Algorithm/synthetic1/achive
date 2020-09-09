@@ -1,0 +1,2 @@
+R0_r0,R4_r4,R3_r3:r0.a0 >= r4.b4 and r4.b4 > r3.b3;
+R0_r0,R2_r2,R4_r4:r0.a0 <= r2.b2 and r2.b2 >= r4.b4;

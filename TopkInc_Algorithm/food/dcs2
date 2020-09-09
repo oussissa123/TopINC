@@ -1,0 +1,4 @@
+FoodInspection_t1, FoodInspection_t2:t1.Facility_Type = t2.Facility_Type AND t1.violations = t2.violations AND t1.Results <> t2.Results;
+Foodinspection_t1, Foodinspection_t2:t1.license = t2.license AND t1.dba_name <> t2.dba_name;
+Foodinspection_t1, Foodinspection_t2:t1.risk <> t2.risk AND t1.license = t2.license;
+Foodinspection_i, Foodinspection_n:i.license=n.license and to_date(i.inspection_date, 'MM/DD/YYYY') < to_date(n.inspection_date, 'MM/DD/YYYY') and n.inspection_type ilike '%consultation%' and i.inspection_type not ilike '%consultation%';

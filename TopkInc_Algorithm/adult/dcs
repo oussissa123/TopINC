@@ -1,0 +1,3 @@
+Adult_t:t.Sex = 'Female' AND t.Relationship = 'Husband';
+Adult_t:t.Sex='Male' AND t.Relationship = 'Wife';
+Adult_t:t.Relationship =  'Not-in-family' AND t.maritalstatus = 'Married-civ-spouse';

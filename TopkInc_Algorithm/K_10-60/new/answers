@@ -1,0 +1,23 @@
+D4:
+A) Denial constraints can express a large subclass of first order logic and very different constraints can be expressed. In the evaluation, it is not reported if the constraint are defined over one tuple or over multiple tuples, this may affect significantly the setting. 
+
+All the constraints definies over hospital, tax datasets are constraints defined over two relations atoms as mentionned in table.3, . The constraints defined on pstock contains one constraint defined on two relation atoms and it contains only two equality atoms, the remainder is defined on one relation atom. In synthetic dataset, there are five constraints defined on one relation atom, five defined constraints on two relation atoms and the remainder constraints are defined on three tables. All the case of tax, hospital and synthetic datasets, and inequality, equality and remainder of arithmetic logique operators ($<,>,\le, \ge$) are used together. 
+
+
+B) The number of equalities in the atoms of the constraints strongly affect these results. It seems important to detail how different kinds of denial constraint affect the results of the proposed method. Even more importantly, the error rate play a key role. Even a small number of errors can lead to a quadratic number of violations with DCs. 
+
+C) While my understanding is that the top-k algorithm is designed to be independent from this aspect, the size of the of the provenance information may end up affecting the second step in the solution but this is not discussed at all.
+
+TopInc algorithm depends to the number of violated constraints and the number of combunations of violations of these constraints. Because the indexes from join relations to scan to find answers of a top-k query forms the cartesian product of different buckets from these join relations. This result is depicted in figure.7. For answers of a query without ranking (i.e, outputing all results), we have also studied the overhead of query with computing of measures.
+
+
+D5:
+I cannot guess why the results for top-k start at k=60 - as the numbers seem to be stable with k between 60 and 100, should we extrapolate that the trend applies with smaller and bigger values?
+Answer: see figure.8 in paper.
+
+D6:
+The number of joins is always equal to 1 and the queries seems to be simple. This should be expanded and discussed, as it is important to understand if and when the proposed solution benefits start to diminish. In other words, it is not clear when the boost in the performance degrade for the proposed method. This point goes together with the observations in D4-D5 about error rate, kind of constraints, k values... it is not clear what are the boundaries of the proposed solution - are the authors claiming that it's always better than the baseline?
+
+
+Answer: see figure.8 in paper.
+

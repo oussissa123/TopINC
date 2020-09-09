@@ -1,0 +1,1 @@
+tax_t1,  tax_t2:t1.Phone=t2.Phone AND t1.MaritalStatus=t2.MaritalStatus AND t1.HasChild=t2.HasChild;

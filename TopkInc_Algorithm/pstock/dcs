@@ -1,0 +1,10 @@
+pstock_t1, pstock_t2:t1.Close=t2.Close  AND t1.Open=t2.Close;
+pstock_t1:t1.High<t1.Low;
+pstock_t1:t1.High<t1.Close;
+pstock_t1:t1.Open<t1.Low;
+pstock_t1:t1.Low>t1.Close;
+pstock_t1:t1.Open>t1.High;
+pstock_t1:t1.Ticker='A' AND t1.High>=141.36;
+pstock_t1:t1.Ticker='AMT' AND t1.High>=141.36;
+pstock_t1:t1.Ticker='AMT' AND t1.Low>=137.505;
+pstock_t1:t1.Ticker='AIV' AND t1.High>=141.36
